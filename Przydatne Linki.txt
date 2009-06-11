@@ -1,0 +1,2 @@
+Niezbêdne s³ownictwo Systemów kontroli wersji http://en.wikipedia.org/wiki/Version_control_system#Common_vocabulary
+Instalacja subversive pod Eclipse http://www.vogella.de/blog/?p=225
