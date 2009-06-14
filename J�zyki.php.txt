@@ -1,0 +1,22 @@
+//public/index.php
+$translate = new Zend_Translate('Array', '../language/polish.php', 'pl_PL'); 
+$translate->setLocale('pl_PL');
+Zend_Registry::set('Zend_Translate', $translate);   
+
+//language/polish.php
+ <?php  
+ return array(  
+  'formLabels_Login' => 'Login',
+  'formLabels_Haslo' => 'Haslo', 
+  'formLabels_Name' => 'Imię',  
+  'formLabels_Email' => 'Email',  
+  'formLabels_Content' => 'Zawartość',  
+  'formLabels_Submit' => 'Wyślij',  
+  'formLabels_Reset' => 'Reset',     
+  'formDescriptions_Name' => 'Twoje Imię',  
+  'formDescriptions_Email' => 'Wpisz adres email',
+  'isEmpty' => 'To pole nie może być puste.'
+ );  
+ 
+ //application/views/scripts/kontroler/widok.phtml
+ <?php echo $this->translate('formLabels_Login'); ?>
